@@ -18,7 +18,7 @@ The primary goal of this project is to uncover hidden patterns within customer d
 
 ## Dependencies
 Before running the project, ensure that the following Python libraries are installed:
-```bash
+```
 pip install numpy pandas matplotlib seaborn scikit-learn
 ```
 ## Overview
