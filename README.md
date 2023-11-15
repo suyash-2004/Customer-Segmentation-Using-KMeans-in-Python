@@ -1,5 +1,5 @@
 Markdown
-# Customer Segmentation Analysis: Unveiling Hidden Customer Personas
+# Customer Segmentation
 
 ## Project Overview
 
