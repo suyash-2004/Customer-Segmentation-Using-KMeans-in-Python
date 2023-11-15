@@ -1,16 +1,16 @@
-Customer Segmentation using K-Means Clustering
-Overview
+# Customer Segmentation using K-Means Clustering
+
+## Overview
 This repository contains a Python script for customer segmentation using K-Means clustering on a dataset of mall customers. The script utilizes popular data science libraries such as NumPy, Pandas, Matplotlib, Seaborn, and scikit-learn.
 
-Project Structure
-Customer_Segmentation.ipynb: Jupyter Notebook containing the script for customer segmentation.
-Mall_Customers.csv: CSV file containing the dataset.
-Installation
-Clone the repository:
+## Project Structure
+- **Customer_Segmentation.ipynb**: Jupyter Notebook containing the script for customer segmentation.
+- **Mall_Customers.csv**: CSV file containing the dataset.
 
-bash
-Copy code
-git clone https://github.com/your-username/customer-segmentation.git
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/customer-segmentation.git
 Install the required libraries:
 
 bash
