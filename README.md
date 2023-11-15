@@ -1,45 +1,45 @@
-# Customer Segmentation using K-Means Clustering
+# Customer Segmentation Analysis
 
-## Overview
-This repository contains a Python script for customer segmentation using K-Means clustering on a dataset of mall customers. The script utilizes popular data science libraries such as NumPy, Pandas, Matplotlib, Seaborn, and scikit-learn.
+## Project Overview
 
-## Project Structure
-- **Customer_Segmentation.ipynb**: Jupyter Notebook containing the script for customer segmentation.
-- **Mall_Customers.csv**: CSV file containing the dataset.
+This project aims to analyze and segment customer data from the Mall_Customers.csv dataset. The goal is to identify patterns and insights that can be used to better understand customer behavior and inform marketing strategies.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/customer-segmentation.git
-Install the required libraries:
+## Data Exploration
 
-bash
-Copy code
-pip install numpy pandas matplotlib seaborn scikit-learn
-Run the Jupyter Notebook Customer_Segmentation.ipynb to execute the customer segmentation script.
+The data analysis process involved several steps:
 
-Dataset
-The dataset (Mall_Customers.csv) contains information about mall customers, including their annual income, age, gender, and spending score.
+1. **Data Import and Overview:** The data was imported into a Pandas DataFrame and examined using head(), shape(), and describe() methods to gain a basic understanding of the dataset.
 
-Usage
-Open the Jupyter Notebook and run each cell to perform the following tasks:
+2. **Data Distribution:** The distributions of key variables like Annual Income (k$), Age, and Spending Score (1-100) were explored using Seaborn's displot() function to visualize the spread of the data.
 
-Data exploration and visualization.
-Customer segmentation using K-Means clustering.
-Visualization of the segmented customers based on annual income and spending score.
-Visualizations
-The notebook includes various visualizations such as:
+3. **Gender Analysis:** The number of customers in each gender category was visualized using a bar chart. The relationship between age and gender was further explored using a boxplot to compare the age distribution across genders.
 
-Distribution of annual income, age, and spending score.
-Bar plots depicting the number of customers in different age groups and spending score ranges.
-Scatter plots showing the relationship between age and annual income, age and spending score, and annual income and spending score.
-Elbow point graph for determining the optimal number of clusters in K-Means clustering.
-Scatter plot of customers colored by cluster label after segmentation.
-Conclusion
-The K-Means clustering algorithm is applied to segment customers based on their annual income and spending score. The optimal number of clusters is determined using the elbow method, and customers are visualized in scatter plots based on their clusters.
+4. **Income-Age-Spending Relationships:** Scatter plots were used to visualize the relationships between age and annual income, age and spending score, and annual income and spending score to identify any correlations or patterns.
 
-Feel free to explore and modify the script to suit your specific requirements.
+5. **Age Distribution by Range:** The number of customers in different age ranges was visualized using a bar chart to understand the age distribution of the customer base.
 
-Note: Ensure that you have Python and Jupyter Notebook installed on your system before running the script.
+6. **Spending Score Distribution by Range:** The number of customers in different spending score ranges was visualized using a bar chart, broken down by gender, to identify any spending patterns among different genders.
 
-Enjoy exploring customer segmentation with K-Means clustering!
+7. **Annual Income Distribution by Range:** The number of customers in different annual income ranges was visualized using a bar chart, broken down by age group, to analyze the distribution of income across different age groups.
+
+## Cluster Analysis
+
+To identify groups of customers with similar characteristics, K-means clustering was applied to the data. The optimal number of clusters was determined using the elbow method, which involves calculating the WCSS (Within Cluster Sum of Squares) for different values of k and identifying the point where the WCSS starts to decrease sharply.
+
+## Results
+
+The data analysis revealed several insights about the customer base:
+
+* Customers are predominantly in the 26-35 age range.
+* Spending scores tend to increase with age.
+* There is a positive correlation between annual income and spending score.
+* Female customers are more likely to have higher spending scores than male customers.
+* There are five distinct customer segments based on their annual income and spending score profiles.
+
+## Conclusions
+
+The customer segmentation analysis provides valuable insights into the characteristics and behavior of different customer groups. These insights can be used to inform marketing strategies, tailor product recommendations, and enhance customer engagement.
+
+## Future Work
+
+Further analysis could include exploring the relationships between customer demographics, purchase history, and product preferences. Additionally, machine learning techniques could be employed to develop predictive models for customer behavior and identify potential churn risks.
